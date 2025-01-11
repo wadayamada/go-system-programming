@@ -59,6 +59,7 @@ func writeTcp() {
 	if err != nil {
 		panic(err)
 	}
+	// コネクションもちゃんとクローズして、ソケットバッファやファイルディスクリプタなどのリソースの解放が必要
 	defer conn.Close()
 	file, err := os.Create("tcp.log")
 	if err != nil {

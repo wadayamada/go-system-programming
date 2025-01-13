@@ -17,3 +17,5 @@
 - VPN
 - LAN(ローカルネットワーク)、プライベートIPアドレス
 - NAT
+- datagram型のunixドメインソケットの場合、クライアント用のUnixドメインソケットファイルが必要な理由がわからない
+- サーバー側でnet.ListenPacketしてからクライアント側でnet.Dialして、conn.WriteToしたものはクライアントで受け取れたが、新しくサーバー側でnet.Dialでconnを作って、conn.Writeしたものはクライアントで受け取れなかった

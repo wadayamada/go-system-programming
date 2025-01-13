@@ -15,7 +15,7 @@
 - UDPパケットの最大サイズは64KBなので、それ以上でかいと別のUDPパケットとして扱う必要がある
 
 # わからなかったこと
-- サーバー側でnet.ListenPacketしてからクライアント側でnet.Dialして、conn.WriteToしたものはクライアントで受け取れたが、新しくサーバー側でnet.Dialでconnを作って、conn.Writeしたものはクライアントで受け取れなかった
+README.mdに移動
 
 # やること
 - [x] UDPを使った通信

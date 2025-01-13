@@ -37,8 +37,6 @@ OSはCPUも特権モードで実行できるため、基本的にあらゆる操
     - Windowsなら必ず置いてある、kernel32.ddl, user32.ddl, shell32.ddlなどの標準ライブラリを実行時にロードする
   - Microsoftは内部のコードを公開してない、かつ、SYSCALL方式を取ってないため、直接呼べないので、この方法を取る必要がある
 
-動的リンクライブラリってなんだっけ？
-
 # SYSCALL命令がどう処理されるか
 Linuxの場合
 - 事前にwrmsrl命令を使って、entry_SYSCALL_64のポインタを特別なレジスタ(MSR_LSTAR)に登録しておく

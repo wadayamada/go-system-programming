@@ -5,7 +5,7 @@ import (
 	"syscall"
 )
 
-func main() {
+func kqueue() {
 	kq, err := syscall.Kqueue()
 	if err != nil {
 		panic(err)
